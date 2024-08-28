@@ -1,0 +1,10 @@
+.main_menu_container {
+    -fx-background-color: #EEEEEE;
+    -fx-alignment: center;
+}
+
+.left_container {
+    -fx-background-color: #FFFFFF;
+    -fx-background-insets: 10;
+    -fx-effect: dropshadow();
+}
