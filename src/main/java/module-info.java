@@ -10,4 +10,5 @@ module fr.afpa.dev.pompey.bibliothequejavafx {
     opens fr.afpa.dev.pompey.bibliothequejavafx.controller to javafx.fxml;
     exports fr.afpa.dev.pompey.bibliothequejavafx.exception;
     opens fr.afpa.dev.pompey.bibliothequejavafx.exception to javafx.fxml;
+    exports fr.afpa.dev.pompey.bibliothequejavafx.model.ListeModele;
 }

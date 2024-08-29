@@ -11,18 +11,18 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane fx:id="livresView" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane fx:id="livresView" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.afpa.dev.pompey.bibliothequejavafx.controller.ControllerLivres">
    <children>
       <Text layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Livres">
          <font>
             <Font size="18.0" />
          </font></Text>
-      <TableView layoutY="240.0" prefHeight="360.0" prefWidth="580.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="240.0">
+      <TableView fx:id="LivresTable" layoutY="240.0" prefHeight="360.0" prefWidth="580.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="240.0">
          <columns>
-            <TableColumn prefWidth="75.0" text="Titre" />
-            <TableColumn prefWidth="75.0" text="Auteur" />
-            <TableColumn prefWidth="75.0" text="Quantité" />
-            <TableColumn prefWidth="75.0" text="Actions" />
+            <TableColumn fx:id="titreLivresColumn" prefWidth="75.0" text="Titre" />
+            <TableColumn fx:id="auteurLivresColumn" prefWidth="75.0" text="Auteur" />
+            <TableColumn fx:id="quantiteLivresColumn" prefWidth="75.0" text="Quantité" />
+            <TableColumn fx:id="actionsLivresColumn" prefWidth="75.0" text="Actions" />
          </columns>
          <columnResizePolicy>
             <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
@@ -43,9 +43,9 @@
             <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Titre" />
             <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Auteur" GridPane.rowIndex="1" />
             <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Quantité" GridPane.rowIndex="2" />
-            <TextField fx:id="nomTextFieldAbonnees" GridPane.columnIndex="1" />
-            <TextField fx:id="prenomTextFieldAbonnees" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <TextField fx:id="emailTextFieldAbonnees" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="titreTextFieldLivres" GridPane.columnIndex="1" />
+            <TextField fx:id="auteurTextFieldLivres" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="quantiteTextFieldLivres" GridPane.columnIndex="1" GridPane.rowIndex="2" />
          </children>
       </GridPane>
       <Button fx:id="validerButtonLivres" alignment="CENTER" layoutX="304.0" layoutY="146.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="69.0" text="Valider" />

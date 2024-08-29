@@ -77,21 +77,21 @@ public class ViewFactory {
 
     public void showAbonnees() {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/fr/afpa/dev/pompey/bibliothequejavafx/Abonnees.fxml"));
-        ControllerAbonnees controllerAbonnees = new ControllerAbonnees(abonneesView);
+        ControllerAbonnees controllerAbonnees = new ControllerAbonnees();
         loader.setController(controllerAbonnees);
         createStage(loader);
     }
 
     public void showLivres() {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/fr/afpa/dev/pompey/bibliothequejavafx/Livres.fxml"));
-        ControllerLivres controllerLivres = new ControllerLivres(livresView);
+        ControllerLivres controllerLivres = new ControllerLivres();
         loader.setController(controllerLivres);
         createStage(loader);
     }
 
     public void showPrets(){
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/fr/afpa/dev/pompey/bibliothequejavafx/Prets.fxml"));
-        ControllerPrets controllerPrets = new ControllerPrets(pretsView);
+        ControllerPrets controllerPrets = new ControllerPrets();
         loader.setController(controllerPrets);
         createStage(loader);
     }

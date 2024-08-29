@@ -12,7 +12,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane fx:id="PretsView" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane fx:id="pretsView" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.afpa.dev.pompey.bibliothequejavafx.controller.ControllerPrets">
    <children>
       <Text layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prêts">
          <font>
@@ -20,11 +20,11 @@
          </font></Text>
       <TableView layoutX="9.0" layoutY="240.0" prefHeight="350.0" prefWidth="600.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
          <columns>
-            <TableColumn prefWidth="75.0" text="Abonnées" />
-            <TableColumn prefWidth="75.0" text="Livres" />
-            <TableColumn prefWidth="75.0" text="Date Début" />
-            <TableColumn prefWidth="88.0" text="Date Fin" />
-            <TableColumn prefWidth="75.0" text="Actions" />
+            <TableColumn fx:id="abonneesColumnPrets" prefWidth="75.0" text="Abonnées" />
+            <TableColumn fx:id="livresColumnPrets" prefWidth="75.0" text="Livres" />
+            <TableColumn fx:id="dateDebutColumnPrets" prefWidth="75.0" text="Date Début" />
+            <TableColumn fx:id="dateFinColumnPrets" prefWidth="88.0" text="Date Fin" />
+            <TableColumn fx:id="actionsColumnPrets" prefWidth="75.0" text="Actions" />
          </columns>
          <columnResizePolicy>
             <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
