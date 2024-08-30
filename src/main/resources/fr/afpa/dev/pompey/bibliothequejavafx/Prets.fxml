@@ -18,7 +18,7 @@
          <font>
             <Font size="18.0" />
          </font></Text>
-      <TableView layoutX="9.0" layoutY="240.0" prefHeight="350.0" prefWidth="600.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+      <TableView fx:id="PretsTable" layoutX="9.0" layoutY="240.0" prefHeight="350.0" prefWidth="600.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
          <columns>
             <TableColumn fx:id="abonneesColumnPrets" prefWidth="75.0" text="Abonnées" />
             <TableColumn fx:id="livresColumnPrets" prefWidth="75.0" text="Livres" />
@@ -33,7 +33,7 @@
       <TextField fx:id="searchTextFieldPrets" layoutX="387.0" layoutY="205.0" prefHeight="25.0" prefWidth="203.0" />
       <GridPane layoutX="26.0" layoutY="48.0" prefHeight="75.0" prefWidth="552.0">
          <columnConstraints>
-            <ColumnConstraints hgrow="SOMETIMES" maxWidth="286.0" minWidth="10.0" prefWidth="111.0" />
+            <ColumnConstraints halignment="RIGHT" maxWidth="286.0" minWidth="10.0" prefWidth="111.0" />
             <ColumnConstraints hgrow="SOMETIMES" maxWidth="470.0" minWidth="10.0" prefWidth="470.0" />
          </columnConstraints>
          <rowConstraints>
@@ -41,8 +41,8 @@
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
          </rowConstraints>
          <children>
-            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Abonnes" />
-            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Livres" GridPane.rowIndex="1" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Abonnes" wrappingWidth="50.775390625" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Livres" wrappingWidth="34.841796875" GridPane.rowIndex="1" />
             <ComboBox fx:id="abonnnesComboBoxPrets" prefHeight="25.0" prefWidth="458.0" GridPane.columnIndex="1" />
             <ComboBox fx:id="livresComboBoxPrets" prefHeight="25.0" prefWidth="475.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
          </children>

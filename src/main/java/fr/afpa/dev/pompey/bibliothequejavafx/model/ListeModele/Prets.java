@@ -26,8 +26,8 @@ public class Prets{
         return livres;
     }
 
-    public void setLivre(Livres livre) {
-        this.livres = livre;
+    public void setLivres(Livres livres) {
+        this.livres = livres;
     }
 
     public Prets(Abonnees abonnees, Livres livres, LocalDate dateDebut, LocalDate dateFin) {

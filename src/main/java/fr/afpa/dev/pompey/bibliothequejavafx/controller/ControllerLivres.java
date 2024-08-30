@@ -55,7 +55,7 @@ public class ControllerLivres implements Initializable {
     @FXML
     private Button validerButtonLivres;
 
-    private ObservableList<Livres> livresListe;
+    private static ObservableList<Livres> livresListe;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -152,6 +152,10 @@ public class ControllerLivres implements Initializable {
         titreTextFieldLivres.clear();
         auteurTextFieldLivres.clear();
         quantiteTextFieldLivres.clear();
+    }
+
+    public static void updateLivresTable() {
+        livresListe.setAll(Listes.getLivres());
     }
 }
 
