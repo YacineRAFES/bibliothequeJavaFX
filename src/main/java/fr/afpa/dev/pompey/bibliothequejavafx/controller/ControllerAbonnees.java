@@ -99,8 +99,8 @@ public class ControllerAbonnees implements Initializable {
         abonneesListe = FXCollections.observableArrayList(Listes.getAbonnes());
 
         TableAbonnees.setItems(abonneesListe);
-        abonneesListe.add(new Abonnees("Dupont", "Jean", "jean.dupont@example.com", LocalDate.now()));
-        abonneesListe.add(new Abonnees("Martin", "Marie", "marie.martin@example.com", LocalDate.now()));
+//        abonneesListe.add(new Abonnees("Dupont", "Jean", "jean.dupont@example.com", LocalDate.now()));
+//        abonneesListe.add(new Abonnees("Martin", "Marie", "marie.martin@example.com", LocalDate.now()));
 
 
         new filterTable<>(searchTextFieldAbonnees, TableAbonnees);

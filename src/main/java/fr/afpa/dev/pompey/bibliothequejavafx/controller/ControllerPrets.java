@@ -7,6 +7,7 @@ import fr.afpa.dev.pompey.bibliothequejavafx.model.ListeModele.Prets;
 import fr.afpa.dev.pompey.bibliothequejavafx.model.Listes;
 import fr.afpa.dev.pompey.bibliothequejavafx.model.Utilitaires.AffichageFenetre;
 import fr.afpa.dev.pompey.bibliothequejavafx.model.Utilitaires.Input;
+import fr.afpa.dev.pompey.bibliothequejavafx.model.Utilitaires.filterTable;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -110,6 +111,9 @@ public class ControllerPrets implements Initializable {
 
 
         PretsTable.setItems(pretsListes);
+
+        new filterTable<>(searchTextFieldPrets, PretsTable);
+
         addListeners();
     }
 

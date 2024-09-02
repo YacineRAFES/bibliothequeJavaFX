@@ -6,6 +6,7 @@ import fr.afpa.dev.pompey.bibliothequejavafx.model.ListeModele.Livres;
 import fr.afpa.dev.pompey.bibliothequejavafx.model.Listes;
 import fr.afpa.dev.pompey.bibliothequejavafx.model.Utilitaires.AffichageFenetre;
 import fr.afpa.dev.pompey.bibliothequejavafx.model.Utilitaires.Input;
+import fr.afpa.dev.pompey.bibliothequejavafx.model.Utilitaires.filterTable;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -95,6 +96,9 @@ public class ControllerLivres implements Initializable {
         livresListe = FXCollections.observableArrayList(Listes.getLivres());
 
         LivresTable.setItems(livresListe);
+
+        new filterTable<>(searchTextFieldLivres, LivresTable);
+
         addListeners();
     }
 
